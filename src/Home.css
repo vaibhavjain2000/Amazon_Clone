@@ -1,0 +1,72 @@
+.home {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(234,237, 237);
+}
+
+.home__image {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 1;
+    margin-bottom: -150px;
+}
+
+.home__row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.carousel-row {
+    z-index: 1;
+    display: inline;
+    
+    justify-content: center;
+}
+.btm-carousel {
+    background-color: #ffffff;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom-carousel {
+    display:flex;
+    height: auto; 
+    max-width: 100%;
+    border-radius: 50%;
+}
+.carousel-item {
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+.back {
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    background-color: #354859;
+    color:#ffffff;
+    font-size: small;
+    font-weight: 500;
+}
+.back:hover {
+    background-color: #485868;
+}
+
+
+.carousel-indicators{
+    background-color: darkgray; 
+}
+.carousel-control-next-icon{
+    background-image : url(./resources/arrowright.svg);
+}
+.carousel-control-prev-icon{
+  background-image : url(./resources/arrowleft.svg);
+}
